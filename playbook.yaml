@@ -1,0 +1,13 @@
+---
+- hosts: *
+  gather_facts: yes
+  vars:
+    wifi:
+      name: "WeeFee"
+      pass: "noneyabiz"
+
+
+  tasks:
+    - name: Configure wifi by templating the wpa config
+      template: src=templates/wpa_supplicant.conf.j2 dest=/etc/wpa_supplicant/wpa_supplicant.conf
+      
