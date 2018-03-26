@@ -1,5 +1,5 @@
 # _Configure Me Pi 🥧_
-The Ultimate Raspberry Pi Ansible Assisted Automatic Configurerer"
+"The Ultimate Raspberry Pi Ansible Assisted Automatic Configurerer"
 
 ### Initial Project Goals
 - Preform a basic setup for a new pi. 🥧
