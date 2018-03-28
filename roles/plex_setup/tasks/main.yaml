@@ -6,12 +6,12 @@
   - name: add plex repo
     shell: echo "deb https://dev2day.de/pms/ stretch main" >> /etc/apt/sources.list.d/pms.list
 
-  - name:
+  - name: install important transport package
     apt:
       name: apt-transport-https
       update_cache: yes
 
-  - name:
+  - name: install plex
     apt:
       name: plexmediaserver-installer
       update_cache: yes
