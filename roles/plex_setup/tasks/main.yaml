@@ -1,0 +1,17 @@
+---
+  - name: add plex public key
+    apt_key:
+      url: https://dev2day.de/pms/dev2day-pms.gpg.key
+
+  - name: add plex repo
+    shell: echo "deb https://dev2day.de/pms/ stretch main" >> /etc/apt/sources.list.d/pms.list
+
+  - name:
+    apt:
+      name: apt-transport-https
+      update_cache: yes
+
+  - name:
+    apt:
+      name: plexmediaserver-installer
+      update_cache: yes
