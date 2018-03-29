@@ -18,6 +18,6 @@
 
   - lineinfile:
       dest: /etc/default/plexmediaserver.prev
-      regexp: '^\$PLEX_MEDIA_SERVER_USER='
-      line: '$PLEX_MEDIA_SERVER_USER=pi'
+      regexp: '^\PLEX_MEDIA_SERVER_USER='
+      line: 'PLEX_MEDIA_SERVER_USER=pi'
       state: present
