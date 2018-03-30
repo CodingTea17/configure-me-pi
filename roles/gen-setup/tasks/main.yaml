@@ -1,0 +1,11 @@
+---
+  - name: Install basic pkgs
+    apt:
+      name: "{{ item }}"
+      update_cache: true
+      state: present
+    with_items:
+      - 'git'
+      - 'tree'
+      - 'lsof'
+      - 'exfat-fuse'
