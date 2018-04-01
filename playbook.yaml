@@ -2,14 +2,12 @@
 - hosts: 127.0.0.1
   connection: local
   gather_facts: yes
-  vars:
-    wifi:
-      name: "WeeFee"
-      pass: "noneyabiz"
-
+  vars_files:
+    - config.yaml
   tasks:
     - name: Configure wifi by templating the wpa config
       template: src=templates/wpa_supplicant.conf.j2 dest=/etc/wpa_supplicant/wpa_supplicant.conf
+      when: enablewifisetup
 
     - name: Setup plex!
       become: True

@@ -8,7 +8,7 @@
 
 ### Instructions
 1. Clone the repo and `cd configure-me-pi`
-2. Configure playbook.yaml with your wifi password.
+2. Configure config.yaml with your wifi ssid/password. (optional: the default is don't setup WiFi)
 3. execute `ansible-playbook playbook.yaml`
 4. Eat pie.
 

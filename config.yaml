@@ -1,0 +1,6 @@
+# Determines if WiFi should be setup
+enablewifisetup: no # no/False or yes/True
+# The dictionary used to store WiFi credentials
+wifi:
+  name: "WeeFee"
+  pass: "noneyabiz"
